@@ -1,0 +1,26 @@
+{
+  "name": "express-typescript-template",
+  "packageManager": "yarn@3.5.0",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "yarn run tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"yarn run tsc --watch\" \"yarn run nodemon -q dist/index.js\""
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "concurrently": "^8.0.1",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.3"
+  }
+}
